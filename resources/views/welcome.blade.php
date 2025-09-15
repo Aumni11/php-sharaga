@@ -17,6 +17,15 @@
             
     </head>
     <body>
-        
+        <h1>Заголовок</h1>
+        <div class="container">
+            @for($i=1; $i<=12; $i++)
+            <div class="card">
+                <img src="{{ Vite::asset('resources/image/1.jpg') }}" alt="картинка">
+                <h2>Карточка {{$i}}</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim eligendi ex alias praesentium, rerum nobis debitis tenetur numquam molestiae voluptatibus reprehenderit sint exercitationem beatae facilis mollitia ipsum dolores officiis. Deserunt.</p>
+            </div>
+            @endfor
+        </div>
     </body>
 </html>
